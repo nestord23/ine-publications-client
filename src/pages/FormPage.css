@@ -1,0 +1,134 @@
+.form-container {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.form-header {
+  margin-bottom: 1.5rem;
+}
+
+.form-header .btn-back {
+  background: none;
+  border: none;
+  color: #818cf8;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 0;
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+.form-header .btn-back:hover {
+  text-decoration: underline;
+}
+
+.form-header .page-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #e2e2ea;
+  font-family: 'Inter', sans-serif;
+}
+
+.form-card {
+  background: #1a1a26;
+  border: 1px solid #2a2a3a;
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.form-group {
+  margin-bottom: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.form-group label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #c4c4d4;
+  font-family: 'Inter', sans-serif;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  padding: 0.6rem 0.85rem;
+  border: 1px solid #3a3a4e;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-family: inherit;
+  color: #e2e2ea;
+  background: #22222f;
+  transition: border-color 0.2s;
+  outline: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  border-color: #818cf8;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.input-error {
+  border-color: #f87171 !important;
+}
+
+.error-msg {
+  font-size: 0.78rem;
+  color: #f87171;
+}
+
+.form-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid #242434;
+}
+
+.btn-cancel {
+  padding: 0.55rem 1.25rem;
+  border: 1px solid #3a3a4e;
+  border-radius: 6px;
+  background: transparent;
+  color: #c4c4d4;
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.btn-cancel:hover {
+  background: #242434;
+}
+
+.btn-submit {
+  padding: 0.55rem 1.25rem;
+  border: none;
+  border-radius: 6px;
+  background: #6366f1;
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.btn-submit:hover {
+  background: #818cf8;
+}
+
+.btn-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.state-msg {
+  text-align: center;
+  padding: 3rem;
+  color: #8b8b9e;
+}

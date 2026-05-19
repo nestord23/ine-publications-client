@@ -1,25 +1,25 @@
 import axios from 'axios';
-import type { CreatePostDto, UpdatePostDto } from '../types/post';
+import type { Post, CreatePostDto, UpdatePostDto } from '../types/post';
 
 const API_URL = `${import.meta.env.VITE_API_URL}/posts`;
 
 export const postsService = {
-  getAll: async (): Promise<CreatePostDto[]> => {
+  getAll: async (): Promise<Post[]> => {
     const { data } = await axios.get(API_URL);
     return data;
   },
 
-  getById: async (id: string): Promise<CreatePostDto> => {
+  getById: async (id: string): Promise<Post> => {
     const { data } = await axios.get(`${API_URL}/${id}`);
     return data;
   },
 
-  create: async (post: CreatePostDto): Promise<CreatePostDto> => {
+  create: async (post: CreatePostDto): Promise<Post> => {
     const { data } = await axios.post(API_URL, post);
     return data;
   },
 
-  update: async (id: string, post: UpdatePostDto): Promise<CreatePostDto> => {
+  update: async (id: string, post: UpdatePostDto): Promise<Post> => {
     const { data } = await axios.put(`${API_URL}/${id}`, post);
     return data;
   },
